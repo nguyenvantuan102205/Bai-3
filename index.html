@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Pro Dashboard</title>
+    <link rel="stylesheet" href="03.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="var(--primary-color)"
+          stroke-width="2.5"
+        >
+          <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+          <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+        </svg>
+        <h1>Analytics Workspace</h1>
+      </header>
+
+      <main class="workspace-card">
+        <section class="filter-area">
+          <div class="section-title">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polygon
+                points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+              ></polygon>
+            </svg>
+            Filters
+          </div>
+          <div class="filter-controls">
+            <select class="filter-select">
+              <option>Last 30 Days</option>
+              <option>Last 7 Days</option>
+            </select>
+            <select class="filter-select">
+              <option>All Channels</option>
+              <option>Organic Traffic</option>
+            </select>
+          </div>
+        </section>
+
+        <div class="results-area">
+          <section class="section-container">
+            <div class="section-title">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 3v18h18"></path>
+                <path d="M18 17l-6-6-4 4-5-5"></path>
+              </svg>
+              Insights Overview
+            </div>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div>
+                  <div class="stat-label">Visitors</div>
+                  <div class="stat-val">42,100</div>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div>
+                  <div class="stat-label">Conversion</div>
+                  <div class="stat-val">3.8%</div>
+                </div>
+                <div class="ring-md">
+                  <svg viewBox="0 0 36 36">
+                    <circle class="ring-bg" cx="18" cy="18" r="16"></circle>
+                    <circle
+                      class="ring-bar"
+                      cx="18"
+                      cy="18"
+                      r="16"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="96.2"
+                    ></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div>
+                  <div class="stat-label">Bounce Rate</div>
+                  <div class="stat-val">28%</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-container" style="margin-bottom: 20px">
+            <div class="section-title">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              Top Pages
+            </div>
+
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Page</th>
+                    <th>Views</th>
+                    <th>Conversion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Homepage</td>
+                    <td>18,400</td>
+                    <td>
+                      <div style="display: flex; align-items: center; gap: 8px">
+                        <div class="ring-sm">
+                          <svg viewBox="0 0 36 36">
+                            <circle
+                              class="ring-bg"
+                              cx="18"
+                              cy="18"
+                              r="16"
+                            ></circle>
+                            <circle
+                              class="ring-bar"
+                              cx="18"
+                              cy="18"
+                              r="16"
+                              stroke-dasharray="100"
+                              stroke-dashoffset="95.8"
+                            ></circle>
+                          </svg>
+                        </div>
+                        4.2%
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Pricing</td>
+                    <td>8,120</td>
+                    <td>
+                      <div style="display: flex; align-items: center; gap: 8px">
+                        <div class="ring-sm">
+                          <svg viewBox="0 0 36 36">
+                            <circle
+                              class="ring-bg"
+                              cx="18"
+                              cy="18"
+                              r="16"
+                            ></circle>
+                            <circle
+                              class="ring-bar"
+                              cx="18"
+                              cy="18"
+                              r="16"
+                              stroke-dasharray="100"
+                              stroke-dashoffset="93.9"
+                            ></circle>
+                          </svg>
+                        </div>
+                        6.1%
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3
+              style="
+                margin-top: 40px;
+                margin-bottom: 15px;
+                font-size: 0.8rem;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                text-align: center;
+              "
+            >
+              User Distribution
+            </h3>
+
+            <div class="chart-box">
+              <div class="pie-chart"></div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  font-size: 0.85rem;
+                  font-weight: 600;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 8px">
+                  <span
+                    style="
+                      width: 12px;
+                      height: 12px;
+                      background: #0ea5e9;
+                      border-radius: 3px;
+                    "
+                  ></span>
+                  Homepage (773)
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px">
+                  <span
+                    style="
+                      width: 12px;
+                      height: 12px;
+                      background: #6366f1;
+                      border-radius: 3px;
+                    "
+                  ></span>
+                  Pricing (495)
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px">
+                  <span
+                    style="
+                      width: 12px;
+                      height: 12px;
+                      background: #f43f5e;
+                      border-radius: 3px;
+                    "
+                  ></span>
+                  Blog (112)
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="footer-actions">
+          <button class="btn-export">Export Report</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
