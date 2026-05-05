@@ -1,4 +1,4 @@
-/* Theme: Light Theme - Professional Blue Gradient */
+
 :root {
   --bg-color: #f1f5f9;
   --workspace-box: #ffffff;
@@ -34,7 +34,6 @@ body {
   .container { padding: 40px 20px; }
 }
 
-/* Header */
 header {
   display: flex;
   align-items: center;
@@ -52,7 +51,7 @@ header h1 {
   header h1 { font-size: 1.6rem; }
 }
 
-/* WORKSPACE CARD */
+
 .workspace-card {
   background: var(--workspace-box);
   border: 1px solid var(--border-color);
@@ -76,7 +75,7 @@ header h1 {
   margin-bottom: 20px;
 }
 
-/* FILTER AREA */
+
 .filter-controls {
   display: flex;
   gap: 12px;
@@ -97,7 +96,7 @@ header h1 {
   outline: none;
 }
 
-/* RESULTS AREA */
+
 .results-area {
   background: linear-gradient(to bottom, #e0f2fe 0%, #ffffff 100%);
   border-radius: 16px;
@@ -113,7 +112,7 @@ header h1 {
   margin-bottom: 40px;
 }
 
-/* Stats Cards */
+
 .stats-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -137,7 +136,7 @@ header h1 {
 .stat-val { font-size: 1.4rem; font-weight: 800; }
 .stat-label { color: var(--text-muted); font-size: 0.8rem; font-weight: 600; }
 
-/* TABLE RESPONSIVE */
+
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -168,7 +167,7 @@ td {
   font-weight: 500;
 }
 
-/* Rings */
+
 .ring-sm { width: 28px; height: 28px; }
 .ring-md { width: 44px; height: 44px; }
 svg circle { fill: none; stroke-width: 3.5; }
@@ -180,7 +179,7 @@ svg circle { fill: none; stroke-width: 3.5; }
   stroke-linecap: round;
 }
 
-/* Chart Box */
+
 .chart-box {
   display: flex;
   flex-direction: column;
@@ -206,7 +205,6 @@ svg circle { fill: none; stroke-width: 3.5; }
   flex-shrink: 0;
 }
 
-/* Export Button */
 .footer-actions {
   margin-top: 30px;
   display: flex;
